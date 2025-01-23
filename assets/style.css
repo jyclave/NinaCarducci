@@ -247,17 +247,24 @@ input[type="submit"] {
 footer {
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch;
-	width: 100%;
+	align-items: center;
+	gap: 20px;
+	background-color: #E5975F;
+	margin-top: 50px;
+}
+
+footer > div {
+	flex: 1;
+	max-width: 50%;
 }
 
 footer > div:first-child {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	gap: 5px;
-	background-color: #f0f0f0; /* Couleur de fond pour la première div */
-	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	gap: 10px;
 	flex: 1;
 }
 
@@ -265,6 +272,7 @@ footer > div:last-child {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #F6D2B8;
 }
 
 footer > div:last-child iframe {
