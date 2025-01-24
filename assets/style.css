@@ -295,6 +295,11 @@ footer {
 	align-items: center;
 	height:200px;
 }
+.name-border {
+	border: 8px groove #E5975F;
+	padding: 50px;
+}
+
 @media all and (max-width: 1180px) {
 
 	P {
