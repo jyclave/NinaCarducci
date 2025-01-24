@@ -65,7 +65,7 @@
 		</div>
 		<div id="about-me">
 			<h2 class="about-me__title">A propos de moi</h2>
-			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+			<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
@@ -144,35 +144,59 @@
 				<h2>Une question ? Une demande de devis ?</h2>
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label for="nom">Nom</label>
-					<input type="text" name="nom" id="nom" aria-label="nom">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" aria-label="email">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-					<input type="submit" value="Envoyer" aria-label="envoyer"/>
-				</form>
+					<label for="nom" id="label-nom">Nom</label>
+					<input type="text" name="nom" id="nom" aria-labelledby="label-nom" required>
+			
+					<label for="email" id="label-email">Email</label>
+					<input type="email" name="email" id="email" aria-labelledby="label-email" required>
+			
+					<label for="message" id="label-message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10" aria-labelledby="label-message" placeholder="Écrivez votre message ici..." required minlength="10" maxlength="500"></textarea>
+			
+					<input type="submit" value="Envoyer" aria-label="Envoyer le formulaire">
+			</form>
 			</div>
 			<div class="picture right">
 				<img src="./assets/images/camera.webp" alt="appareil photo">
 			</div>
 		</div>
 	</div>
+	<section class="local-ref">
+		<div itemscope itemtype="https://schema.org/Photographer">
+			<span itemprop="name"><h2>Nina Carducci, Photographe</h2></span><br>
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+					<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span><br>
+					<span itemprop="addressLocality">Bordeaux</span>, 
+					<span itemprop="postalCode">33200</span><br>
+					<span itemprop="addressRegion">Nouvelle-Aquitaine</span><br> 
+					<span itemprop="telephone">Tel: 05 56 67 78 89</span><br>
+					<meta itemprop="openingHours" content="Mo-Fr 10:00-19:00">
+					<span>Du Lundi au Vendredi de 10h00 à 19h00</span>
+			</div>
+			<div itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+					<meta itemprop="latitude" content="44.846578">
+					<meta itemprop="longitude" content="-0.609116">
+			</div>
+		</div>
+		<div itemprop="hasMap" itemscope itemtype="https://schema.org/Map">
+			<iframe 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.771917840039!2d-0.6091167882476363!3d44.84657807431449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sen!2sfr!4v1737614899774!5m2!1sen!2sfr" 
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>	
+	</section>
+
 </Main>
 <footer>
-	<div itemscope itemtype="https://nina-carducci.github.io/">
-			<span itemprop="name">Nina Carducci, Photographe</span>
-			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-			<span itemprop="addressLocality">Bordeaux</span>
-			<span itemprop="postalCode">33200</span>
-			<span itemprop="addressRegion">Nouvelle-Aquitaine</span>
-			<span itemprop="telephone">05 56 67 78 89</span>
-			<meta itemprop="openingHours" content="Mo-Sa 10:00-19:00">Je réponds du Lundi au Vendredi de 10h00 à 19h00
+	<div class="nav">   
+		<ul>
+			<li><a href="#about" aria-label="Déplacement vers la section A Propos">À propos</a></li>
+			<li><a href="#gallery" aria-label="Déplacement vers la section Galerie">Galerie</a></li>
+			<li><a href="#services" aria-label="Déplacement vers la section Service">Service</a></li>
+			<li><a href="#contact" aria-label="Déplacement vers la section Contact">Contact</a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" aria-label="Lien vers instagram"><img src="assets/images/instagram.png" alt=""></a></li>
+		</ul>
 	</div>
-	<div itemprop="map">
-		<iframe 
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.771917840039!2d-0.6091167882476363!3d44.84657807431449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sen!2sfr!4v1737614899774!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>	
 </footer>
 </body>
 </html>

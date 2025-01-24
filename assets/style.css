@@ -244,43 +244,57 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-footer {
+.local-ref {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	background-color: #E5975F;
-	margin-top: 50px;
+	background-color: #F6D2B8;
+
 }
 
-footer > div {
+.local-ref > div {
 	flex: 1;
-	max-width: 50%;
+	max-width: 60%;
+}
+.local-ref > div {
+	flex: 2;
+	max-width: 40%;
 }
 
-footer > div:first-child {
+
+.local-ref > div:first-child {
 	display: flex;
+	max-width: 100%;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content:center;
 	font-size: 24px;
 	gap: 10px;
 	flex: 1;
+
 }
 
-footer > div:last-child {
+.local-ref > div:last-child {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #F6D2B8;
+	background-color: #E5975F;
+	flex: 2;
 }
 
-footer > div:last-child iframe {
+.local-ref > div:last-child iframe {
 	max-width: 100%;
 	margin: 0 auto;
 }
 
-
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	height:200px;
+}
 @media all and (max-width: 1180px) {
 
 	P {
