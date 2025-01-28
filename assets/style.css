@@ -293,6 +293,18 @@ input[type="submit"] {
 	padding: 50px;
 }
 
+.phone-link {
+    text-decoration: none;  
+    color: inherit;         
+    transition: all 0.3s ease; 
+}
+
+.phone-link:hover {
+    color: #666;       
+    transform: scale(1.05); 
+    display: inline-block; 
+}
+
 @media all and (max-width: 1180px) {
 
 	P {
