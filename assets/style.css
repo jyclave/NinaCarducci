@@ -24,6 +24,9 @@ p {
 }
 .nav ul {
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-items: center;
 	list-style-type: none;
 	font-size: 24px;
 	margin-bottom: 0;
@@ -95,7 +98,7 @@ p {
 }
 .title{
 	text-align: center;
-	padding-block: 2em;
+	padding-block: 30px;
 }
 .gallery .nav {
 	justify-content: center;
@@ -295,17 +298,18 @@ input[type="submit"] {
 
 .phone-link {
     text-decoration: none;  
-    color: inherit;         
+    color: #979393;         
     transition: all 0.3s ease; 
+		font-size: 19px;
 }
 
 .phone-link:hover {
-    color: #666;       
+    color: #000;
     transform: scale(1.05); 
     display: inline-block; 
 }
 
-@media all and (max-width: 1180px) {
+@media all and (max-width: 1440px) {
 
 	P {
 		font-size: 20px;
@@ -329,7 +333,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
 	#about{
 		flex-direction: column;
 
@@ -410,12 +414,13 @@ input[type="submit"] {
     background-color: #E5975F;
 	}	
 	.map {
-	height: 300px;
+	height: 450px;
+	width: 600px;
 	}
 
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 768px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
@@ -428,6 +433,7 @@ input[type="submit"] {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
+		justify-content: space-between;
 	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
@@ -450,3 +456,149 @@ input[type="submit"] {
 	}
 }
 
+@media all and (max-width: 425px) {
+  /* Header */
+  .top-header {
+    padding-block: 15px;
+  }
+  
+  .nav ul {
+    font-size: 18px;
+  }
+
+  /* Global */
+  p {
+    font-size: 16px;
+  }
+
+  /* About section */
+  #about {
+    padding-inline: 1em;
+    padding-block: 1em;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .about-me__title {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+  }
+
+  .about-me__introduction {
+    font-size: 18px;
+  }
+
+  /* Services section */
+  .service {
+    max-width: 100%;
+    margin: 1em 0;
+    height: auto;
+    padding: 0.5em;
+  }
+
+  /* Contact section */
+  #contact {
+    padding-inline: 1em;
+    padding-block: 1em;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form textarea {
+    font-size: 1em;
+  }
+
+  /* Quote section */
+  .quote {
+    width: 90%;
+    padding-block: 1.5em;
+  }
+
+  .quote__author {
+    font-size: 18px;
+  }
+
+  /* Local reference section */
+  .local-ref {
+    gap: 10px;
+  }
+
+  .local-ref > div:first-child {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .name-border {
+    padding: 20px;
+    border-width: 4px;
+  }
+
+  .phone-link {
+    font-size: 16px;
+  }
+
+  /* Map */
+  .map {
+    height: 200px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  /* Header */
+  .nav ul {
+    font-size: 16px;
+  }
+  
+  .nav li {
+    padding-inline: 5px;
+  }
+
+  /* Global */
+  p {
+    font-size: 14px;
+  }
+
+  /* About section */
+  .about-me__title {
+    font-size: 20px;
+  }
+
+  .about-me__introduction {
+    font-size: 16px;
+  }
+
+  /* Services section */
+  .service {
+    padding: 0.3em;
+  }
+
+  /* Contact form */
+  form input, form textarea {
+    font-size: 14px;
+  }
+
+  /* Quote section */
+  .quote {
+    width: 95%;
+    padding-block: 1em;
+  }
+
+  .quote__author {
+    font-size: 16px;
+  }
+
+  /* Local reference section */
+  .local-ref > div:first-child {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .name-border {
+    padding: 15px;
+    border-width: 3px;
+  }
+}
