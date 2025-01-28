@@ -14,6 +14,34 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"telephone": "05 56 67 78 89",
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday",
+						"Friday"
+					],
+					"opens": "10:00",
+					"closes": "19:00"
+				}
+			]
+		}
+	</script>
 </head>
 <body>
 <header class="top-header">
@@ -74,15 +102,15 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="vue de la scène d'une salle de concert, la couleur rouge domine, la foule manisfeste sa joie"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="un homme d'affaire debout les bras croisés sourit à la caméra"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="jeune femme assise dans un bureau open space"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="focus sur deux paires de mains qui vont se joindrent"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portrait d'un homme noir, les yeux fermés, la tête légerement penchée vers la droite"/>
-				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="couple de jeunes mariés en mouvement, souriant, un palmier derrière"/>
-				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait d'une jeune fille, la main droite dans les cheveux, elle regarde vers le sol"/>
-				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="un chanteur sur scène, il a la main levé vers le ciel, les couleurs bleue blanc rouge scintillent"/>
-				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="jeune femme assise à un bureau face à son ordinateur portable, elle rit"/>
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="vue de la scène d'une salle de concert, la couleur rouge domine, la foule manisfeste sa joie">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="un homme d'affaire debout les bras croisés sourit à la caméra">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt="jeune femme assise dans un bureau open space">
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt="focus sur deux paires de mains qui vont se joindrent">
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="portrait d'un homme noir, les yeux fermés, la tête légerement penchée vers la droite">
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="couple de jeunes mariés en mouvement, souriant, un palmier derrière">
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="portrait d'une jeune fille, la main droite dans les cheveux, elle regarde vers le sol">
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="un chanteur sur scène, il a la main levé vers le ciel, les couleurs bleue blanc rouge scintillent">
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="jeune femme assise à un bureau face à son ordinateur portable, elle rit">
 			</div>
 		</div>
 		<div class="quote">
@@ -100,7 +128,7 @@
 			<div class="service">
 				<div class="service__description">
 					<h3>Shooting photo</h3>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Nouvelle Aquitaine pour réaliser vos photos</p>
 				</div>
 				<div class="service__price">
 					<h4>350€/demi journée</h4>
@@ -173,11 +201,10 @@
 					<span>33200</span><br>
 					<span>Nouvelle-Aquitaine</span><br> 
 					<span>Tel: 05 56 67 78 89</span><br>
-					<meta itemprop="openingHours" content="Mo-Fr 10:00-19:00">
-					<span>du Lundi au Vendredi de 10h00 à 19h00</span>
+					<span>du lundi au vendredi de 10h00 à 19h00</span>
 			</div>
 		</div>
-		<div itemtype="https://schema.org/Map">
+		<div>
 			<iframe class="map"   title="Localisation de Nina Carducci" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.7719178341126!2d-0.6091114238105206!3d44.84657807443517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sen!2sfr!4v1737698172074!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>	
 </footer>
