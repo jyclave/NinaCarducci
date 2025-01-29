@@ -258,11 +258,11 @@ input[type="submit"] {
 
 .local-ref > div {
 	flex: 1;
-	max-width: 60%;
+	max-width: 40%;
 }
 .local-ref > div {
 	flex: 2;
-	max-width: 40%;
+	max-width: 60%;
 }
 
 
@@ -272,7 +272,7 @@ input[type="submit"] {
 	flex-direction: column;
 	align-items: center;
 	justify-content:center;
-	font-size: 24px;
+	font-size: 19px;
 	gap: 10px;
 	flex: 1;
 
@@ -286,24 +286,27 @@ input[type="submit"] {
 	flex: 2;
 }
 
-.local-ref > div:last-child iframe {
-	max-width: 100%;
-	margin: 0 auto;
+.le-studio {
+	width: 60%;
+	height: auto;
+	padding: 20px 0px 20px 0px;
 }
 
-.name-border {
+/*.name-border {
 	border: 8px groove #E5975F;
 	padding: 50px;
-}
+}*/
 
-.phone-link {
+.phone-link,
+.address-studio {
     text-decoration: none;  
     color: #979393;         
     transition: all 0.3s ease; 
 		font-size: 19px;
 }
 
-.phone-link:hover {
+.phone-link:hover,
+.address-studio:hover {
     color: #000;
     transform: scale(1.05); 
     display: inline-block; 
