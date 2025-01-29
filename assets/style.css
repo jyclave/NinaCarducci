@@ -284,18 +284,17 @@ input[type="submit"] {
 	align-items: center;
 	background-color: #E5975F;
 	flex: 2;
+	padding: 20px; 
 }
 
 .le-studio {
-	width: 60%;
+	width: 100%; 
 	height: auto;
-	padding: 20px 0px 20px 0px;
+	max-width: 600px; 
+	object-fit: contain; 
+	display: block; 
+	margin: 0 auto; 
 }
-
-/*.name-border {
-	border: 8px groove #E5975F;
-	padding: 50px;
-}*/
 
 .phone-link,
 .address-studio {
@@ -412,14 +411,18 @@ input[type="submit"] {
 		height: 100%;
 		padding: 20px 0px 20px 0px;
 	}
-
+	.local-ref > div:last-child {
+		width: 100%;
+		padding: 20px;
+}
 	footer > *:last-child {
     background-color: #E5975F;
 	}	
-	.map {
-	height: 450px;
-	width: 600px;
-	}
+	.le-studio {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+}
 
 }
 
@@ -535,19 +538,12 @@ input[type="submit"] {
     padding: 10px;
   }
 
-  .name-border {
-    padding: 20px;
-    border-width: 4px;
-  }
 
-  .phone-link {
+  .phone-link,
+	.address-studio {
     font-size: 16px;
   }
 
-  /* Map */
-  .map {
-    height: 200px;
-  }
 }
 
 @media all and (max-width: 320px) {
@@ -600,8 +596,11 @@ input[type="submit"] {
     padding: 5px;
   }
 
-  .name-border {
-    padding: 15px;
-    border-width: 3px;
-  }
+    .le-studio {
+        width: 100%;
+        max-width: 380px; /* Ajustez selon vos besoins */
+        height: auto;
+        padding: 10px;
+    }
+
 }
