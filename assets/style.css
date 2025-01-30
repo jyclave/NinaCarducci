@@ -85,6 +85,13 @@ p {
 #gallery {
 	/*	min-height: 100vh; */
 }
+.modal-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .title{
 	text-align: center;
 	padding-block: 30px;
@@ -96,9 +103,13 @@ p {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
+
 }
 .nav-pills .nav-link {
 	color: #000
+}
+.nav-link:hover {
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
