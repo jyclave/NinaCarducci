@@ -460,6 +460,10 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+	.le-studio {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 13px;
 }
 
 @media all and (max-width: 425px) {
@@ -598,9 +602,8 @@ input[type="submit"] {
 
     .le-studio {
         width: 100%;
-        max-width: 380px; /* Ajustez selon vos besoins */
         height: auto;
-        padding: 10px;
+				padding-top: 20px;
     }
 
 }
