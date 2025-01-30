@@ -227,7 +227,6 @@ input[type="submit"] {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
 	background-color: #F6D2B8;
 }
 .local-ref > div {
@@ -254,15 +253,11 @@ input[type="submit"] {
 	align-items: center;
 	background-color: #E5975F;
 	flex: 2;
-	padding: 20px; 
 }
 .le-studio {
 	width: 100%; 
-	height: auto;
-	max-width: 600px; 
-	object-fit: contain; 
-	display: block; 
-	margin: 0 auto; 
+	height: 100%;
+	object-fit: cover;
 }
 .phone-link,
 .address-studio {
@@ -354,7 +349,6 @@ input[type="submit"] {
 	}
 	.local-ref {
 		flex-direction: column;
-		padding: 0px 0px 30px 0px;
 		background-color: #E5975F;
 	}
 	.local-ref > div {
@@ -371,19 +365,12 @@ input[type="submit"] {
 		height: 100%;
 		padding: 20px 0px 20px 0px;
 	}
-	.local-ref > div:last-child {
-		width: 100%;
-		padding: 20px;
-}
+
 	footer > *:last-child {
     background-color: #E5975F;
 	}	
-	.le-studio {
-		width: 100%;
-		max-width: 500px;
-		margin: 0 auto;
 }
-}
+
 @media all and (max-width: 768px) {
 	.top-header {
 		flex-direction: column;
@@ -418,11 +405,6 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-	.le-studio {
-		width: 100%;
-		margin: 0 auto;
-		padding-top: 13px;
-}
 }
 @media all and (max-width: 425px) {
   .top-header {
@@ -471,9 +453,7 @@ input[type="submit"] {
   .quote__author {
     font-size: 18px;
   }
-  .local-ref {
-    gap: 10px;
-  }
+
   .local-ref > div:first-child {
     font-size: 18px;
     padding: 10px;
@@ -516,9 +496,4 @@ input[type="submit"] {
     font-size: 16px;
     padding: 5px;
   }
-    .le-studio {
-        width: 100%;
-        height: auto;
-				padding-top: 20px;
-    }
 }
