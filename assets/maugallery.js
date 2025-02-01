@@ -239,8 +239,11 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(".tags-bar .nav-link").removeClass("active");
+      $(".active-tag").removeClass("active-tag");
+      
+      // Add active classes to clicked tag
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 

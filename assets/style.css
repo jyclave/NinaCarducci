@@ -68,8 +68,8 @@ p {
 	flex: 2
 }
 .about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
+	/*margin-top: 1em;*/
+	margin-bottom: 30px;
 	font-size: 30px;
 }
 .about-me__introduction {
@@ -101,7 +101,7 @@ p {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #DBAB27;
 	border-radius:0 ;
 
 }
