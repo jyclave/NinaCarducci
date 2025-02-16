@@ -21,6 +21,10 @@ body {
 p {
 	font-size: 24px;
 }
+#gallery, #about, #services, #contact {
+	scroll-margin-top: 80px;
+	padding-top: 80px;
+}
 .nav ul {
 	display: flex;
 	flex-direction: row;
@@ -416,8 +420,8 @@ input[type="submit"] {
 		max-width: 90%;
 	}
 	#about, #contact {
-		padding-inline: 2em;
-		padding-block: 2em;
+		scroll-margin-top: 100px;
+		padding-top: 100px;
 	}
 	form {
 		width: 100%;
@@ -436,12 +440,12 @@ input[type="submit"] {
   .nav ul {
     font-size: 18px;
   }
+	#about, #contact {
+		scroll-margin-top: 100px;
+		padding-top: 100px;
+	}
   p {
     font-size: 16px;
-  }
-  #about {
-    padding-inline: 1em;
-    padding-block: 1em;
   }
   .picture {
     width: 100%;
@@ -458,10 +462,6 @@ input[type="submit"] {
     margin: 1em 0;
     height: auto;
     padding: 0.5em;
-  }
-  #contact {
-    padding-inline: 1em;
-    padding-block: 1em;
   }
   form {
     width: 100%;
@@ -489,15 +489,23 @@ input[type="submit"] {
 @media all and (max-width: 370px) {
 
 	.nav {
-		margin: 0px 26px 0px 20px;
+		margin: 0px 26px 0px 23px;
 	}
 
+  #about {
+    padding-inline: 1em;
+    padding-block: 1em;
+  }
 }
 
 @media all and (max-width: 320px) {
   .nav ul {
     font-size: 16px;
   } 
+	#about, #contact {
+		scroll-margin-top: 100px;
+		padding-top: 100px;
+	}
 	.nav {
 		margin: 0px 5px 0px 15px;
 	}
