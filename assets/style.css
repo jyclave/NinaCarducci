@@ -90,9 +90,6 @@ p {
 	width: 80%;
 	font-size: 19px;
 }
-#gallery {
-	/*	min-height: 100vh; */
-}
 .modal-body {
 	display: flex;
 	flex-direction: row;
