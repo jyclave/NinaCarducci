@@ -46,6 +46,9 @@ p {
 .w-100 {
 	height: auto;
 }
+.carousel-control-next, .carousel-control-prev {
+	color: #000000;
+}
 #about {
 	display: flex;
 	background-color: #F6D2B8;
